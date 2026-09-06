@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Create and publish an Islamic learning class."
+    >
+
+    <title>Create a Class | ILM</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/create-class.css"
+    >
+
+</head>
+
+<body>
+
+
+<header class="create-header">
+
+    <div class="create-nav">
+
+        <a
+            href="../index.html"
+            class="logo"
+        >
+
+            <span class="logo-mark">ع</span>
+
+            <span>
+
+                <strong>ILM</strong>
+
+                <small>
+                    Sacred Learning
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <a
+            href="classes.html"
+            class="back-link"
+        >
+            View Classes
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="create-page">
+
+
+    <!-- PAGE INTRO -->
+
+    <section class="create-intro">
+
+        <span class="eyebrow">
+            Teacher dashboard
+        </span>
+
+        <h1>
+            Create a new class.
+        </h1>
+
+        <p>
+            Provide clear information about your class
+            so students can understand what they will
+            learn before enrolling.
+        </p>
+
+    </section>
+
+
+
+    <!-- IMPORTANT NOTICE -->
+
+    <section class="teacher-notice">
+
+        <strong>
+            Teacher verification required
+        </strong>
+
+        <p>
+            Only approved teachers will eventually be
+            allowed to publish classes publicly.
+            Authentication and verification checks will
+            be connected when we build the backend.
+        </p>
+
+    </section>
+
+
+
+    <!-- CLASS FORM -->
+
+    <form
+        id="createClassForm"
+        class="create-class-form"
+    >
+
+
+        <!-- BASIC INFORMATION -->
+
+        <section class="create-section">
+
+            <div class="section-title">
+
+                <span>01</span>
+
+                <div>
+
+                    <h2>
+                        Basic information
+                    </h2>
+
+                    <p>
+                        Give your class a clear and
+                        understandable identity.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="classTitle">
+                    Class title *
+                </label>
+
+                <input
+                    type="text"
+                    id="classTitle"
+                    name="classTitle"
+                    placeholder="e.g. Qur'an Reading for Beginners"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="classDescription">
+                    Class description *
+                </label>
+
+                <textarea
+                    id="classDescription"
+                    name="classDescription"
+                    rows="7"
+                    placeholder="Explain what students will learn in this class..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-grid">
+
+
+                <div class="form-field">
+
+                    <label for="subject">
+                        Subject *
+                    </label>
+
+                    <select
+                        id="subject"
+                        name="subject"
+                        required
+                    >
+
+                        <option value="">
+                            Select subject
+                        </option>
+
+                        <option value="quran">
+                            Qur'an
+                        </option>
+
+                        <option value="tajweed">
+                            Tajweed
+                        </option>
+
+                        <option value="hifz">
+                            Hifz
+                        </option>
+
+                        <option value="arabic">
+                            Arabic
+                        </option>
+
+                        <option value="fiqh">
+                            Fiqh
+                        </option>
+
+                        <option value="hadith">
+                            Hadith
+                        </option>
+
+                        <option value="aqeedah">
+                            Aqeedah
+                        </option>
+
+                        <option value="seerah">
+                            Seerah
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="level">
+                        Student level *
+                    </label>
+
+                    <select
+                        id="level"
+                        name="level"
+                        required
+                    >
+
+                        <option value="">
+                            Select level
+                        </option>
+
+                        <option value="beginner">
+                            Beginner
+                        </option>
+
+                        <option value="intermediate">
+                            Intermediate
+                        </option>
+
+                        <option value="advanced">
+                            Advanced
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="language">
+                        Teaching language *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="language"
+                        name="language"
+                        placeholder="e.g. English"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CLASS SCHEDULE -->
+
+        <section class="create-section">
+
+            <div class="section-title">
+
+                <span>02</span>
+
+                <div>
+
+                    <h2>
+                        Class schedule
+                    </h2>
+
+                    <p>
+                        Tell students when learning
+                        sessions will take place.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+
+                <div class="form-field">
+
+                    <label for="startDate">
+                        Start date *
+                    </label>
+
+                    <input
+                        type="date"
+                        id="startDate"
+                        name="startDate"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="duration">
+                        Class duration
+                    </label>
+
+                    <input
+                        type="text"
+                        id="duration"
+                        name="duration"
+                        placeholder="e.g. 3 months"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="schedule">
+                    Weekly schedule *
+                </label>
+
+                <textarea
+                    id="schedule"
+                    name="schedule"
+                    rows="4"
+                    placeholder="e.g. Mondays and Wednesdays, 7:00 PM – 8:00 PM (Africa/Lagos)"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="timezone">
+                    Time zone *
+                </label>
+
+                <input
+                    type="text"
+                    id="timezone"
+                    name="timezone"
+                    placeholder="e.g. Africa/Lagos"
+                    required
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- STUDENT SETTINGS -->
+
+        <section class="create-section">
+
+            <div class="section-title">
+
+                <span>03</span>
+
+                <div>
+
+                    <h2>
+                        Student settings
+                    </h2>
+
+                    <p>
+                        Control who the class is designed
+                        for and how many students can join.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+
+                <div class="form-field">
+
+                    <label for="maxStudents">
+                        Maximum students *
+                    </label>
+
+                    <input
+                        type="number"
+                        id="maxStudents"
+                        name="maxStudents"
+                        min="1"
+                        max="1000"
+                        placeholder="e.g. 20"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="ageGroup">
+                        Student age group
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ageGroup"
+                        name="ageGroup"
+                        placeholder="e.g. Adults"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PRICING -->
+
+        <section class="create-section">
+
+            <div class="section-title">
+
+                <span>04</span>
+
+                <div>
+
+                    <h2>
+                        Class pricing
+                    </h2>
+
+                    <p>
+                        Set the monthly amount students
+                        will pay to join this class.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+
+                <div class="form-field">
+
+                    <label for="currency">
+                        Currency *
+                    </label>
+
+                    <select
+                        id="currency"
+                        name="currency"
+                        required
+                    >
+
+                        <option value="NGN">
+                            Nigerian Naira (₦)
+                        </option>
+
+                        <option value="USD">
+                            US Dollar ($)
+                        </option>
+
+                        <option value="GBP">
+                            British Pound (£)
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="monthlyPrice">
+                        Monthly class fee *
+                    </label>
+
+                    <input
+                        type="number"
+                        id="monthlyPrice"
+                        name="monthlyPrice"
+                        min="0"
+                        placeholder="e.g. 5000"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <p class="pricing-note">
+
+                The platform will later calculate and
+                display all applicable fees clearly before
+                payment is processed.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- CLASS FORMAT -->
+
+        <section class="create-section">
+
+            <div class="section-title">
+
+                <span>05</span>
+
+                <div>
+
+                    <h2>
+                        How the class will run
+                    </h2>
+
+                    <p>
+                        Explain how students will attend
+                        and access the learning sessions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="classFormat">
+                    Class format *
+                </label>
+
+                <select
+                    id="classFormat"
+                    name="classFormat"
+                    required
+                >
+
+                    <option value="">
+                        Select format
+                    </option>
+
+                    <option value="live-online">
+                        Live online classes
+                    </option>
+
+                    <option value="recorded">
+                        Recorded lessons
+                    </option>
+
+                    <option value="hybrid">
+                        Live and recorded lessons
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="accessMethod">
+                    Learning platform / access method
+                </label>
+
+                <textarea
+                    id="accessMethod"
+                    name="accessMethod"
+                    rows="4"
+                    placeholder="Explain how enrolled students will access classes."
+                ></textarea>
+
+                <small>
+                    Private meeting links should not be
+                    displayed publicly.
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- LEARNING OUTCOMES -->
+
+        <section class="create-section">
+
+            <div class="section-title">
+
+                <span>06</span>
+
+                <div>
+
+                    <h2>
+                        What students will learn
+                    </h2>
+
+                    <p>
+                        Give students clear expectations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="outcomes">
+                    Learning outcomes *
+                </label>
+
+                <textarea
+                    id="outcomes"
+                    name="outcomes"
+                    rows="7"
+                    placeholder="Example:
+• Learn the Arabic alphabet
+• Read simple Qur'anic words
+• Understand basic Tajweed rules"
+                    required
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SUBMIT -->
+
+        <section class="submit-section">
+
+            <h2>
+                Ready to publish your class?
+            </h2>
+
+            <p>
+                Your class will be validated and saved
+                to the database when the backend is
+                connected.
+            </p>
+
+
+            <button
+                type="submit"
+                class="button button-primary"
+            >
+                Create Class
+            </button>
+
+
+            <p
+                id="createClassMessage"
+                class="form-message"
+            ></p>
+
+        </section>
+
+
+    </form>
+
+</main>
+
+
+<script src="../js/create-class.js"></script>
+
+</body>
+</html>
