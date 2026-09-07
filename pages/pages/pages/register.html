@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | ILM</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <link rel="stylesheet"
+          href="../css/auth.css">
+
+</head>
+
+<body>
+
+<header class="create-header">
+
+    <div class="create-nav">
+
+        <a href="../index.html"
+           class="logo">
+
+            <span class="logo-mark">ع</span>
+
+            <span>
+                <strong>ILM</strong>
+                <small>Sacred Learning</small>
+            </span>
+
+        </a>
+
+        <a href="login.html"
+           class="back-link">
+
+            Log in
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="auth-page">
+
+    <section class="auth-container">
+
+        <span class="eyebrow">
+            Join ILM
+        </span>
+
+        <h1>
+            Begin your learning journey.
+        </h1>
+
+        <p class="auth-intro">
+            Create an account to discover classes,
+            learn from qualified teachers and manage
+            your learning journey.
+        </p>
+
+
+        <form id="registerForm"
+              class="auth-form">
+
+            <div class="form-field">
+
+                <label for="fullName">
+                    Full name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    required
+                    placeholder="Your full name"
+                >
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="email">
+                    Email address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="you@example.com"
+                >
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    required
+                    minlength="6"
+                    placeholder="Minimum 6 characters"
+                >
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="accountRole">
+                    I want to join as
+                </label>
+
+                <select id="accountRole"
+                        required>
+
+                    <option value="student">
+                        Student
+                    </option>
+
+                    <option value="teacher">
+                        Teacher
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="button button-primary">
+
+                Create Account
+
+            </button>
+
+
+            <p id="authMessage"
+               class="form-message">
+            </p>
+
+        </form>
+
+
+        <p class="auth-switch">
+
+            Already have an account?
+
+            <a href="login.html">
+                Log in
+            </a>
+
+        </p>
+
+    </section>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="../js/supabase.js"></script>
+
+<script src="../js/register.js"></script>
+
+</body>
+</html>
